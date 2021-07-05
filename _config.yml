@@ -1,0 +1,30 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            HelloWorld.cc
+tagline:          'Junseo's github blog'
+description:      'Welcome to Junseo's github blog! I'm a BS student in SNU ECE.'
+url:              http://jsl013.github.io
+baseurl:          /
+
+author:
+  name:           'Junseo Lee'
+  url:            https://github.com/jsl013
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/poole/hyde
+
+# Remote Theme
+remote theme:     poole/hyde
+
