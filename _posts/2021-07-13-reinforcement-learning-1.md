@@ -11,6 +11,7 @@ categories: RL
 
 ## Markov Decision Process (MDP)
 - main property: `memoryless` = only current state and action  
+
 ### Glossary of terms
 - $$S$$: set of states
 - $$A$$: set of actions
