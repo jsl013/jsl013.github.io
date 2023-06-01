@@ -1,22 +1,19 @@
 ---
 permalink: /
-#title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
-#excerpt: "About me"
+title: "About Me"
+excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-{% include base_path %}
 
-{% if page.author and site.data.authors[page.author] %}
-  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
-{% endif %}
-
-# About me
-I am a MS student in snu-comparch lab at [SNU ECE](https://ee.snu.ac.kr),
-Korea.  My research interests are in computer architecture, memory system, and
-the architectural support for emerging workloads.
+I am a MS student in electrical & computer engineering at [Seoul National
+University](https://ee.snu.ac.kr). I am a member of SNU-CompArch, advised by
+[Prof. Jaewoong Sim](https://jaewoong.org). My research interests are in
+processing in memory (PIM), GPU, memory system, and the architectural support
+for emerging workloads. I received my B.S. degree from Seoul National University
+in electrical engineering (2022).
 
 <a name="pubs"></a>
 # Publications
