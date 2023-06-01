@@ -1,0 +1,5 @@
+pubs:
+  - title: "NeuRex: A Case for Neural Rendering Acceleration"
+    author: ['Junseo Lee', 'Kwanseok Choi', 'Jungi Lee', 'Whangbo Joonho', 'Jaewoong Sim']
+    venue: "Proc. of the 50th International Symposium on Computer Architecture (ISCA), Orlando, FL -- to appear"
+    year: 2023
