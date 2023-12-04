@@ -3,3 +3,4 @@ pubs:
     author: ['Junseo Lee', 'Kwanseok Choi', 'Jungi Lee', 'Seokwon Lee', 'Joonho Whangbo', 'Jaewoong Sim']
     venue: "Proc. of the 50th International Symposium on Computer Architecture (ISCA), Orlando, FL -- to appear"
     year: 2023
+    link: "https://jaewoong.org/pubs/isca23-neurex.pdf"
