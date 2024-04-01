@@ -179,6 +179,20 @@
           <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
         {% endif %}
       {% endif %}
+      {% if entry.acm %}
+        {% if entry.acm contains '://' %}
+          <a href="{{ entry.acm }}" class="btn btn-sm z-depth-0" role="button">ACM</a>
+        {% else %}
+          <a href="{{ entry.acm | prepend: '/assets/acm/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">acm</a>
+        {% endif %}
+      {% endif %}
+      {% if entry.lightning_talk %}
+        {% if entry.lightning_talk contains '://' %}
+          <a href="{{ entry.lightning_talk }}" class="btn btn-sm z-depth-0" role="button">Lightning Talk</a>
+        {% else %}
+          <a href="{{ entry.lightning_talk | prepend: '/assets/lightning_talk/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Lightning Talk</a>
+        {% endif %}
+      {% endif %}
       {% if entry.supp %}
         {% if entry.supp contains '://' %}
           <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
