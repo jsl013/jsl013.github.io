@@ -64,6 +64,37 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Teaching -->
+    {% if site.teaching != blank -%} 
+      <h2>
+        <a href="{{ '/teaching/' | relative_url }}" style="color: inherit">Teaching Assistant</a>
+      </h2>
+      <div class="table-responsive">
+        <table class="table table-sm table-borderless">
+          {%- assign teaching = site.teaching | reverse -%} 
+          {% for item in teaching %} 
+            <tr>
+              <th scope="row">{{ item.sem }}</th>
+              <td>
+                {% if item.inline -%} 
+                  {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                {%- else -%} 
+                  <a class="teaching-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {%- endif %} 
+              </td>
+              <td>
+                {% if item.place -%} 
+                  <span class="teaching-place">{{ item.place }}</span>
+                {%- endif %}
+              </td>
+            </tr>
+          {%- endfor %} 
+        </table>
+      </div>
+    {%- else -%} 
+      <p>No teaching so far...</p>
+    {%- endif %} 
+
     <!-- Social -->
     {% if page.social %}
       <div class="social">

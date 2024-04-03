@@ -6,7 +6,32 @@ nav: true
 nav_order: 6
 ---
 
-## Teaching Assistant
-
-- 430.322: Computer Organization, SNU ECE (Spring 2022)
-- 430.315A: Digital Systems Design and Experiments, SNU ECE (Fall 2021, Fall 2022)
+<!-- pages/teaching.md -->
+<div class="teaching">
+{% if site.teaching != blank -%} 
+<div class="table-responsive">
+    <table class="table table-sm table-borderless">
+    {%- assign teaching = site.teaching | reverse -%} 
+    {% for item in teaching %} 
+    <tr>
+        <th scope="row">{{ item.sem }}</th>
+        <td>
+        {% if item.inline -%} 
+            {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+        {%- else -%} 
+            <a class="teaching-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {%- endif %} 
+        </td>
+        <td>
+        {% if item.place -%} 
+            <span class="teaching-place">{{ item.place }}</span>
+        {%- endif %}
+        </td>
+    </tr>
+    {%- endfor %} 
+    </table>
+</div>
+{%- else -%} 
+<p>No teaching so far...</p>
+{%- endif %} 
+</div>
