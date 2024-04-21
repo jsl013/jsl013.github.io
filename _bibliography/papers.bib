@@ -7,7 +7,8 @@
   title = {GSCore: Efficient Radiance Field Rendering via Architectural Support for 3D Gaussian Splatting},
   year = {2024},
   abstract = {This paper presents GSCore, a hardware acceleration unit that efficiently executes the rendering pipeline of 3D Gaussian Splatting with algorithmic optimizations. GSCore builds on the observations from an in-depth analysis of Gaussian-based radiance field rendering to enhance computational efficiency and bring the technique to wide adoption. In doing so, we present several optimization techniques, Gaussian shape-aware intersection test, hierarchical sorting, and subtile skipping, all of which are synergistically integrated with GSCore. We implement the hardware design of GSCore, synthesize it using a commercial 28nm technology, and evaluate the performance across a range of synthetic and real-world scenes with varying image resolutions. Our evaluation results show that GSCore achieves a 15.86× speedup on average over the mobile consumer GPU with a substantially smaller area and lower energy consumption.},
-  booktitle = {Proceedings of the 2024 International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), San Diego, CA, USA},
+  booktitle = {Proceedings of the 2024 International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)},
+  location = {San Diego, CA, USA},
   pdf = {https://jaewoong.org/pubs/asplos24-gscore.pdf},
   lightning_talk = {https://youtu.be/DYvnLmYHpJk},
   selected = {true}
@@ -21,7 +22,7 @@
   url = {https://doi.org/10.1145/3579371.3589056},
   doi = {10.1145/3579371.3589056},
   abstract = {This paper presents NeuRex, an accelerator architecture that efficiently performs the modern neural rendering pipeline with an algorithmic enhancement and supporting hardware. NeuRex leverages the insights from an in-depth analysis of the state-of-the-art neural scene representation to make the multi-resolution hash encoding, which is the key operational primitive in modern neural renderings, more hardware-friendly and features a specialized hash encoding engine that enables us to effectively perform the primitive and the overall rendering pipeline. We implement and synthesize NeuRex using a commercial 28nm process technology and evaluate two versions of NeuRex (NeuRex-Edge, NeuRex-Server) on a range of scenes with different image resolutions for mobile and high-end computing platforms. Our evaluation shows that NeuRex achieves up to 9.88x and 3.11x speedups against the mobile and high-end consumer GPUs with a substantially small area overhead and lower energy consumption.},
-  booktitle = {Proceedings of the 50th Annual International Symposium on Computer Architecture (ISCA), Orlando, FL, USA},
+  booktitle = {Proceedings of the 50th Annual International Symposium on Computer Architecture (ISCA)},
   articleno = {21},
   numpages = {13},
   keywords = {accelerators, machine learning, neural networks, NeRF, neural rendering},
