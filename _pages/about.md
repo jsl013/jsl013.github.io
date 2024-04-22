@@ -16,7 +16,7 @@ teaching: true
 ---
 
 I am a Ph.D. student in Electrical & Computer Engineering at [Seoul National
-University](https://ece.snu.ac.kr). I am a member of Computer Architecture and
+University](https://ece.snu.ac.kr/en). I am a member of Computer Architecture and
 Systems Lab (SNU-CompArch), advised by [Prof. Jaewoong
 Sim](https://jaewoong.org). My research interests are in GPU microarchitecture
 and the architectural support for emerging workloads, particularly graphics
