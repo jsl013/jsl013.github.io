@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-04-03
-sem: 2022 Fall
+sem: 2021 Fall, 2022 Fall
 inline: true
 ---
 
