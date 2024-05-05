@@ -184,9 +184,9 @@
       {% endif %}
       {% if entry.acm %}
         {% if entry.acm contains '://' %}
-          <a href="{{ entry.acm }}" class="btn btn-sm z-depth-0" role="button">ACM</a>
+          <a href="{{ entry.acm }}" class="btn btn-sm z-depth-0" role="button">ACM DL</a>
         {% else %}
-          <a href="{{ entry.acm | prepend: '/assets/acm/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">acm</a>
+          <a href="{{ entry.acm | prepend: '/assets/acm/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">ACM DL</a>
         {% endif %}
       {% endif %}
       {% if entry.lightning_talk %}
